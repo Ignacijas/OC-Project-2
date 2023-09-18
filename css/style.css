@@ -21,6 +21,7 @@ a {
 body{
     font-family: roboto;
 }
+
 .Logo-Top{
     padding-top: 10px;
     padding-bottom: 5px;
@@ -211,14 +212,41 @@ footer{
 }
 
 .Menu-Items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2px;
+}
+
+.hover-menu-items:hover .test-class{
+    transform: scaleX(1);
+    transform: translateX(0);
+    width: 65px;
+}
+
+.hover-menu-items{
+    display: flex;
     border: 1px solid #6b6b6b;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 0px 8px 1px darkgrey;
     border-color: #d7d2d2;
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
     margin: 15px;
+    overflow: hidden;
+}
+
+.test-class{
+    transform-origin: right;
+    transform: translateX(150px);
+    transition: all 1000ms cubic-bezier(.32,0,.07,1);
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 0px 15px 15px 0px;
+    width: 45px;
+}
+
+.fa-circle-check{
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .Item-description-price{
@@ -248,12 +276,19 @@ footer{
     margin: 15px;
     width: 50%;
     align-items: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
     background: linear-gradient(
     to top,
     #9356DC  10%,
     #FF79DA  90%,
     #FF79DA  100%
 );
+}
+
+.order-button:hover{
+    transform: scale(1.15);
 }
 
 .explore-our-restaurants-button{
@@ -268,6 +303,9 @@ footer{
     margin: 15px;
     width: 60%;
     align-items: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
     background: linear-gradient(
     to top,
     #9356DC  10%,
@@ -275,6 +313,11 @@ footer{
     #FF79DA  100%
 );
 }
+
+.explore-our-restaurants-button:hover {
+    transform: scale(1.15);
+}
+
 
 .order-button-center{
     display: flex;
@@ -321,5 +364,90 @@ footer{
 
 @media all and (min-width: 768px) {
 
-    
+    .Logo-Top{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-page-logo{
+        width: 128px;
+    }
+    .Desktop-only-BookMenu-HowItWorks-position{
+        display: flex;
+        gap: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .How-it-works-numbers{
+        left: 400px;
+        margin-top: 26px;
+    }
+
+    .Book-the-menu-you-like{
+        padding-top: 80px;
+    }
+
+    .Restaurants-item-new{
+        width: 70px;
+        margin-left: 444px;
+    }
+
+    .Restaurants-container-box{
+        width: 48%;
+    }
+
+    .center-items{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Restaurants{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .Hide-Desktop{
+        display: none;
+    }
+
+    footer{
+        padding-left: 250px;
+    }
+
+    .Footer-aligment{
+        margin-left: 160px;
+    }
+
+    .Menu-Image {
+        height: 100%;
+    }
+
+    .header{
+        gap: 40%;
+    }
+
+    .Main-menu-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .Logo-image{
+        width: 128px;
+        height: 26px;
+    }
+
+    .order-button{
+        width: 12%;
+    }
 }
+
