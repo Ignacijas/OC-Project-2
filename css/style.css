@@ -432,9 +432,47 @@ footer{
   
   @keyframes fadeOut {
     0% { opacity: 1; }
+    50% { opacity: 0.7; }
     100% { opacity: 0; display: none; }
   }
   
+
+
+
+
+
+
+
+  .heart-icon {
+    font-size: 5rem; /* Adjust the size of the heart as needed */
+    color: green; /* Make the icon transparent */
+
+    overflow: hidden;
+  }
+  
+  .heart-icon:hover::before {
+    content: "\f004"; /* FontAwesome Unicode for heart icon */
+
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    color: red; /* Color to fill the heart with */
+    animation: fillHeart 5s linear; /* Adjust duration and iteration as needed */
+  }
+  
+  @keyframes fillHeart {
+    0% {
+      height: 0%;
+    }
+    50% {
+        height: 50%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+
 
 
 
@@ -476,7 +514,7 @@ footer{
 
     .Restaurants-item-new{
         width: 70px;
-        margin-left: 0px;
+        right: 10px;
     }
 
     .Restaurants-container-box{
