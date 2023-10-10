@@ -223,7 +223,7 @@ footer {
   padding: 2px;
 }
 
-.hover-menu-items:hover .test-class {
+.hover-menu-items:hover .item-check-icon {
   transform: scaleX(1);
   transform: translateX(0);
   width: 65px;
@@ -239,7 +239,7 @@ footer {
   overflow: hidden;
 }
 
-.test-class {
+.item-check-icon {
   transform-origin: right;
   transform: translateX(150px);
   transition: all 1000ms cubic-bezier(0.32, 0, 0.07, 1);
@@ -421,7 +421,7 @@ footer {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 @media all and (min-width: 1280px) {
