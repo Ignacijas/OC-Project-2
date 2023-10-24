@@ -1,9 +1,15 @@
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
 
-button, input[type=submit], input[type=reset] {
+button,
+input[type=submit],
+input[type=reset] {
   background: none;
   color: inherit;
   border: none;
@@ -72,6 +78,10 @@ body {
   border-radius: 10px 10px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.icon-color {
+  color: #ffffff;
 }
 
 footer {
@@ -146,7 +156,6 @@ footer {
 .fa-heart {
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
 .fa-heart:hover {
   transform: scale(1.25);
   animation: pulse 1s infinite;
@@ -155,15 +164,15 @@ footer {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    color: #9356DC;
+    color: #9356dc;
   }
   50% {
     transform: scale(1.25);
-    color: #FF79DA;
+    color: #ff79da;
   }
   100% {
     transform: scale(1);
-    color: #FF79DA;
+    color: #ff79da;
   }
 }
 .Location-icon {
@@ -208,7 +217,7 @@ footer {
   position: absolute;
   margin-top: 28px;
   border-radius: 9999px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding-left: 7px;
   padding-right: 7px;
   left: 14px;
@@ -218,7 +227,7 @@ footer {
 }
 
 .fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .hearth-position {
@@ -285,7 +294,7 @@ footer {
   display: block;
   width: 30px;
   height: 2px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
 .order-button {
@@ -303,12 +312,12 @@ footer {
   transform: scale(1);
   transition-property: transform;
   transition: transform 1000ms, background-color 1000ms 750ms;
-  background: linear-gradient(to top, #9356DC 10%, #FF79DA 90%, #FF79DA 100%);
+  background: linear-gradient(to top, #9356dc 10%, #ff79da 90%, #ff79da 100%);
 }
 
 .order-button:hover {
   transform: scale(1.15);
-  background: linear-gradient(to top, #9356DC 20%, #FF79DA 80%, #f787d7 100%);
+  background: linear-gradient(to top, #9356dc 20%, #ff79da 80%, #f787d7 100%);
 }
 
 .explore-our-restaurants-button {
@@ -326,7 +335,7 @@ footer {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 1000ms;
-  background: linear-gradient(to top, #9356DC 10%, #FF79DA 90%, #FF79DA 100%);
+  background: linear-gradient(to top, #9356dc 10%, #ff79da 90%, #ff79da 100%);
 }
 
 .explore-our-restaurants-button:hover {
@@ -415,7 +424,7 @@ footer {
 }
 
 .spinner {
-  border: 5px solid #FF79DA;
+  border: 5px solid #ff79da;
   border-top: 5px solid transparent;
   border-radius: 50%;
   width: 50px;
@@ -489,8 +498,12 @@ footer {
   }
   footer {
     padding-left: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-  .Footer-aligment {
+  footer .Footer-aligment {
     margin-left: 160px;
   }
   .Menu-Image {
@@ -518,6 +531,6 @@ footer {
   .Desktop-only-page-layout {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
