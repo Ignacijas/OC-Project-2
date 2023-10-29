@@ -84,6 +84,10 @@ body {
   color: #ffffff;
 }
 
+.footer-location {
+  position: relative;
+}
+
 footer {
   background-color: rgb(68, 68, 68);
   padding: 20px;
@@ -457,6 +461,9 @@ footer {
     display: flex;
     justify-content: center;
   }
+  .footer-location {
+    position: absolute;
+  }
   .main-page-logo {
     width: 128px;
   }
@@ -492,13 +499,14 @@ footer {
     gap: 24px;
     padding-left: 15%;
     padding-right: 15%;
+    margin-bottom: 100px;
   }
   .Hide-Desktop {
     display: none;
   }
   footer {
     padding-left: 250px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
