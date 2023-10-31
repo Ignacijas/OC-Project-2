@@ -142,6 +142,12 @@ footer {
   width: 90%;
 }
 
+
+.How-it-works-items:hover{
+  background-color: #ddcaf3;
+  color: $primary;
+}
+
 .How-it-works-icons {
   padding: 3px;
 }
@@ -212,10 +218,6 @@ footer {
   color: white;
   padding-top: 2px;
   padding-bottom: 2px;
-}
-
-.fa-store {
-  color: $primary;
 }
 
 .hearth-position {
